@@ -1,0 +1,1643 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "v1.0",
+        "title": "Auto Tables for RAD Server Sample",
+        "description": "Sample API for Auto Tables",
+        "termsOfService": "http:\/\/www.example.com\/tos\/",
+        "contact": {
+            "name": "Sample Name",
+            "email": "sample@example.com",
+            "url": "http:\/\/www.example.com\/contact\/"
+        },
+        "license": {
+            "name": "Sample API License",
+            "url": "http:\/\/www.example.com\/license\/"
+        }
+    },
+    "host": "example.com",
+    "basePath": "\/v1",
+    "schemes": [
+        "http",
+        "https"
+    ],
+    "consumes": [
+        "application\/json"
+    ],
+    "produces": [
+        "application\/xml",
+        "application\/json",
+        "application\/octet-stream",
+        "text\/csv"
+    ],
+    "paths": {
+        "getwp_commentmeta\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_commentmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_commentmeta\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_commentmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_commentmeta\/?meta_id={meta_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_commentmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "meta_id",
+                        "description": "A param called meta_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_comments\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_comments"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_comments\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_comments"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_comments\/?comment_ID={comment_ID}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_comments"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "comment_ID",
+                        "description": "A param called comment_ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_links\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_links"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_links\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_links"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_links\/?link_id={link_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_links"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "link_id",
+                        "description": "A param called link_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_options\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_options"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_options\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_options"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_options\/?option_id={option_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_options"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "option_id",
+                        "description": "A param called option_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_postmeta\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_postmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_postmeta\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_postmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_postmeta\/?meta_id={meta_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_postmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "meta_id",
+                        "description": "A param called meta_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_posts\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_posts"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_posts\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_posts"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_posts\/?ID={ID}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_posts"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "ID",
+                        "description": "A param called ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_term_relationships\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_term_relationships"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_term_relationships\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_term_relationships"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_term_relationships\/?object_id={object_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_term_relationships"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "object_id",
+                        "description": "A param called object_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_term_taxonomy\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_term_taxonomy"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_term_taxonomy\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_term_taxonomy"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_term_taxonomy\/?term_taxonomy_id={term_taxonomy_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_term_taxonomy"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "term_taxonomy_id",
+                        "description": "A param called term_taxonomy_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_termmeta\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_termmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_termmeta\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_termmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_termmeta\/?meta_id={meta_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_termmeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "meta_id",
+                        "description": "A param called meta_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_terms\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_terms"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_terms\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_terms"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_terms\/?term_id={term_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_terms"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "term_id",
+                        "description": "A param called term_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_usermeta\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_usermeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_usermeta\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_usermeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_usermeta\/?umeta_id={umeta_id}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_usermeta"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "umeta_id",
+                        "description": "A param called umeta_id",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "getwp_users\/": {
+            "get": {
+                "description": "Requests some data",
+                "operationId": "RequestData",
+                "tags": [
+                    "getwp_users"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "postwp_users\/": {
+            "post": {
+                "description": "Add or update some data",
+                "operationId": "AddOrUpdateData",
+                "tags": [
+                    "postwp_users"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "body",
+                        "name": "Body",
+                        "description": "Post Body",
+                        "required": false,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        },
+        "deletewp_users\/?ID={ID}": {
+            "delete": {
+                "description": "Delete some data",
+                "operationId": "DeleteData",
+                "tags": [
+                    "deletewp_users"
+                ],
+                "parameters": [
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Session-Token",
+                        "description": "EMS User Authentication",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Id",
+                        "description": "EMS Tenant Id",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "header",
+                        "name": "X-Embarcadero-Tenant-Secret",
+                        "description": "EMS Tenant Secret",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "in": "query",
+                        "name": "ID",
+                        "description": "A param called ID",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successfully retrieved data"
+                    },
+                    "default": {
+                        "description": "Error occured"
+                    }
+                }
+            }
+        }
+    }
+}
