@@ -19,9 +19,9 @@ You will need to edit the FDConnection component in the RAD Server project to en
 # WordPress DB REST Client Login
 ![Alt text](Screenshots/login.jpg?raw=true "List View")
 
-# WordPress REST Client List View
+# WordPress DB REST Client List View
 ![Alt text](Screenshots/list.jpg?raw=true "List View")
 
-# WordPress REST Client Details View
+# WordPress DB REST Client Details View
 ![Alt text](Screenshots/detail.jpg?raw=true "Detail View")
 
