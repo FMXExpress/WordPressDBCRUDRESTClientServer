@@ -2,7 +2,7 @@
 Cross Platform CRUD REST Client and Server For WordPress 5.1.1 Database.
 
 # Product Overview
-The WordPress DB REST API Client Server was generated using AutoTables for RAD Server using the WordPress 5.1.1 database schema from https://wordpress.org/download/ WordPress is an "open source software you can use to create a beautiful website, blog, or app." The Auto Tables for RAD Server project is not affiliated with the WordPress project. The WordPress DB REST client compiles for Android, IOS, macOS, Windows, and Linux (using FMXLinux). The WordPress DB REST Server compiles for RAD Server. This project provides basic CRUD operations for the WordPress database. It includes listing data in a table, adding a new record in a table, editing a record in a table, and deleting a record in a table. Supports users and groups through RAD Server. The API is fully documented in the Swagger 2.0 format.
+The WordPress DB REST API Client Server was generated using AutoTables for RAD Server ( https://github.com/FMXExpress/AutoTablesForRADServer ) using the WordPress 5.1.1 database schema from https://wordpress.org/download/ WordPress is an "open source software you can use to create a beautiful website, blog, or app." The Auto Tables for RAD Server project is not affiliated with the WordPress project. The WordPress DB REST client compiles for Android, IOS, macOS, Windows, and Linux (using FMXLinux). The WordPress DB REST Server compiles for RAD Server. This project provides basic CRUD operations for the WordPress database. It includes listing data in a table, adding a new record in a table, editing a record in a table, and deleting a record in a table. Supports users and groups through RAD Server. The API is fully documented in the Swagger 2.0 format.
 
 # Compilation
 
